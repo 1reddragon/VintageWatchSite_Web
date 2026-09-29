@@ -262,7 +262,7 @@
       "image": "images/american-wrist-watches/benrus_1953_BA2_17j.jpg",
       "img": "images/american-wrist-watches/benrus_1953_BA2_17j.jpg",
       "description": "Benrus 1953 BA2 17J vintage dress wrist watch.",
-      "case_image": "images/american_wrist_watch_cases/benrus_1953_BA2_17j_case.jpg",
+      "case_image": "images/american-wrist-watch-cases/benrus_1953_BA2_17j_case.jpg",
       "movement_img": "images/american-movements-watches/benrus_1953_BA2_17j.jpg"
     },
     
@@ -275,7 +275,7 @@
       "image": "images/american-wrist-watches/bulova_accuquartz.jpg",
       "img": "images/american-wrist-watches/bulova_accuquartz.jpg",
       "description": "Bulova 1969 Accuquartz vintage watch.",
-      "case_image": "images/american_wrist_watch_cases/bulova_accuquartz_case.jpg"
+      "case_image": "images/american-wrist-watch-cases/bulova_accuquartz_case.jpg"
     },
     {
       "id": "bulova_accutron",
@@ -296,7 +296,7 @@
       "image": "images/american-wrist-watches/elgin_1938_17j.jpg",
       "img": "images/american-wrist-watches/elgin_1938_17j.jpg",
       "description": "Elgin 1938 17J vintage dress watch.",
-      "case_image": "images/american_wrist_watch_cases/elgin_1938_17j_case.jpg",
+      "case_image": "images/american-wrist-watch-cases/elgin_1938_17j_case.jpg",
       "movement_img": "images/american-movements-watches/elgin_1938_17j.jpg"
     },
     {
@@ -308,7 +308,7 @@
       "image": "images/american-wrist-watches/elgin_1960_lord_elgin_760_automatic_30j.jpg",
       "img": "images/american-wrist-watches/elgin_1960_lord_elgin_760_automatic_30j.jpg",
       "description": "Elgin 1960 Lord Elgin Automatic 30J 760 vintage watch.",
-      "case_image": "images/american_wrist_watch_cases/elgin_1960_lord_elgin_760_automatic_30j_case.jpg",
+      "case_image": "images/american-wrist-watch-cases/elgin_1960_lord_elgin_760_automatic_30j_case.jpg",
       "movement_img": "images/american-movements-watches/elgin_1960_lord_elgin_760_automatic_30j.jpg"
     },
     {
@@ -320,7 +320,7 @@
       "image": "images/american-wrist-watches/hamilton_thor_1960_770_22j.jpg",
       "img": "images/american-wrist-watches/hamilton_thor_1960_770_22j.jpg",
       "description": "Hamilton Thor 1960 770 22J vintage watch.",
-      "case_image": "images/american_wrist_watch_cases/hamilton_thor_1960_770_22j_case.jpg",
+      "case_image": "images/american-wrist-watch-cases/hamilton_thor_1960_770_22j_case.jpg",
        "movement_img": "images/american-movements-watches/hamilton_thor_1960_770_22j.jpg"
     },
 
@@ -355,7 +355,7 @@
       "image": "images/swiss-pocket-watches/gruen_semi_thin_758_1928_17j.jpg",
       "img": "images/swiss-pocket-watches/gruen_semi_thin_758_1928_17j.jpg",
       "description": "Gruen Semi Thin 758 1928 17J vintage pocket watch.",
-      "movement_img": "images/swiss-movements-watches/gruen%20semi%20thin_1928%20758_17j.jpg"
+      "movement_img": "images/swiss-movements-watches/gruen_semi_thin_758_1928_17j.jpg"
     },
     {
       "id": "sears_swiss_1j",
@@ -389,7 +389,7 @@
       "image": "images/swiss-wrist-watches/gruen_precision_1951_510_17j.jpg",
       "img": "images/swiss-wrist-watches/gruen_precision_1951_510_17j.jpg",
       "description": "Gruen Precision 1951 510 17J vintage watch.",
-      "case_image": "images/american_wrist_watch_cases/gruen_precision_1951_510_17j_case.jpg",
+      "case_image": "images/american-wrist-watch-cases/gruen_precision_1951_510_17j_case.jpg",
       "movement_img": "images/swiss-movements-watches/gruen_precision_1951_510_17j.jpg"
     },
     {
@@ -401,7 +401,7 @@
       "image": "images/swiss-wrist-watches/gruen_precision_1961_712ca_automatic_25j.jpg",
       "img": "images/swiss-wrist-watches/gruen_precision_1961_712ca_automatic_25j.jpg",
       "description": "Gruen Precision 1961 712Ca Automatic 25J vintage watch.",
-      "case_image": "images/american_wrist_watch_cases/gruen_precision_1961_712ca_automatic_25j_case.jpg",
+      "case_image": "images/american-wrist-watch-cases/gruen_precision_1961_712ca_automatic_25j_case.jpg",
       "movement_img": "images/swiss-movements-watches/gruen_precision_1961_712ca_automatic_25j.jpg"
     },
     {
@@ -426,7 +426,7 @@
       "image": "images/swiss-wrist-watches/seiko_5_21j.jpg",
       "img": "images/swiss-wrist-watches/seiko_5_21j.jpg",
       "description": "Seiko 1967 5 6119A 21J vintage watch.",
-      "case_image": "images/american_wrist_watch_cases/seiko_5_21j_cas.jpg",
+      "case_image": "images/american-wrist-watch-cases/seiko_5_21j_case.jpg",
       "movement_img": "images/swiss-movements-watches/seiko_5_21j.jpg"
     },
 
@@ -461,7 +461,7 @@
       "image": "images/american-homemade-clocks/white_oak_triple_chime_tambour_homemade.jpg",
       "img": "images/american-homemade-clocks/white_oak_triple_chime_tambour_homemade.jpg",
       "description": "White oak homemade triple-chime tambour clock.",
-      "case_image": "images/american-cases-homemade-clocks/white_oak_triple_chime_tambour_homemade.jpg",
+      "case_image": "images/american-cases-homemade-clocks/white_oak_triple_chime_tambour_homemade_clock_case.jpg",
       "movement_img": "images/american-movements-homemade-clocks/351_020_hermle_triple_chime.jpg"
     },
     {
@@ -485,7 +485,7 @@
       "image": "images/american-homemade-clocks/german_late_1800s_7_foot_weight_driven_grandfather_clock.jpg",
       "img": "images/american-homemade-clocks/german_late_1800s_7_foot_weight_driven_grandfather_clock.jpg",
       "description": "German late-1800s 7-foot weight-driven grandfather clock.",
-      "movement_img": "/images/american-movements-homemade-clocks/german_late_1800s_7_foot_weight_driven_grandfather_clock.jpg"
+      "movement_img": "images/american-movements-homemade-clocks/german_late_1800s_7_foot_weight_driven_grandfather_clock_movement.jpg"
     },
 
     {
@@ -558,10 +558,10 @@
       "brand": "Chinese",
       "type": "Mantle Clock",
       "folder": "american-homemade-clocks",
-      "image": "images/american-homemade-clocks/chinese_1940s_cloisonne_mantle_clock.jpg",
-      "img": "images/american-homemade-clocks/chinese_1940s_cloisonne_mantle_clock.jpg",
+      "image": "images/american-homemade-clocks/chinese_1940s_cloisonne_clock.jpg",
+      "img": "images/american-homemade-clocks/chinese_1940s_cloisonne_clock.jpg",
       "description": "Chinese 1940s Cloisonne Battery Operated Mantle clock.",
-      "case_image": "images/american-cases-homemade-clocks/chinese_1940s_cloisonne_mantle_clock_movement.jpg",
+      "case_image": "images/american-cases-homemade-clocks/chinese_1940s_cloisonne_clock_case.jpg",
       "movement_img": "images/american-movements-homemade-clocks/chinese_1940s_cloisonne_mantle_clock_movement.jpg"
     }
     
