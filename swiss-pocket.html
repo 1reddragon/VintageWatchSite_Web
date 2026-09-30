@@ -186,9 +186,9 @@
           </button>
 
           <a
-            href="movement-viewer.html?id=${encodeURIComponent(
-              String(watch.id || "")
-            )}"
+            href="movement-viewer.html?image=${encodeURIComponent(
+              String(watch.movement_img || watch.img || "")
+            )}&amp;name=${encodeURIComponent(String(watch.name || ""))}"
           >
             View Movement
           </a>

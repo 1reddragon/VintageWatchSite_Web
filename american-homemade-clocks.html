@@ -245,12 +245,6 @@
       });
 
       card.querySelector(".movement-button").addEventListener("click", () => {
-        const watchId = card.dataset.watchId;
-        if (watchId) {
-          window.location.href = `movement-viewer.html?id=${encodeURIComponent(watchId)}`;
-          return;
-        }
-
         const movementPath = card.dataset.movement;
         const imagePath = movementPath || image.getAttribute("src");
         const movementUrl = `movement-viewer.html?image=${encodeURIComponent(imagePath)}&name=${encodeURIComponent(name)}`;
