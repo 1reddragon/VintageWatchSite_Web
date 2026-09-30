@@ -1,137 +1,316 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f5f1e8">
-    <meta name="description" content="Discover the enduring craft and character of vintage and antique watches.">
-    <title>Vintage Watch Co. — Time, Well Kept</title>
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="wordmark" href="#home" aria-label="Vintage Watch Co. home">VINTAGE<span>WATCH</span></a>
-      <nav aria-label="Main navigation">
-        <a href="#collection">The collection</a>
-        <a href="#story">Our story</a>
-        <a href="#contact">Find your style</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <title>VintageWatchSite - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .home-intro {
+      max-width: 760px;
+      margin: 0 auto 24px;
+      text-align: center;
+    }
 
-    <main id="home">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow">A little history, close at hand</p>
-          <h1 id="hero-title">Time, <em>well kept.</em></h1>
-          <p class="intro">Explore the enduring design and thoughtful craftsmanship of vintage and antique timepieces.</p>
-          <a class="button" href="#collection">Discover the collection <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="hero-art" aria-hidden="true">
-          <svg viewBox="0 0 360 470" role="presentation">
-            <path class="strap" d="M134 0h92l19 135H115L134 0Zm-19 335h130l-19 135h-92l-19-135Z"/>
-            <rect class="case" x="72" y="118" width="216" height="234" rx="76"/>
-            <circle class="face" cx="180" cy="235" r="83"/>
-            <circle class="dial" cx="180" cy="235" r="6"/>
-            <path class="hand hand-hour" d="m180 235 0-48"/>
-            <path class="hand hand-minute" d="m180 235 43 23"/>
-            <path class="tick" d="M180 166v10m0 118v10m69-69h-10m-118 0h-10m108-49-7 7m-84 84-7 7m0-98 7 7m84 84 7 7"/>
+    .watch-card {
+      width: 250px;
+    }
+
+    .watch-img,
+    .image-error {
+      display: block;
+      width: 100%;
+      height: 250px;
+      box-sizing: border-box;
+    }
+
+    .watch-img {
+      object-fit: contain;
+      background: #f5ead0;
+    }
+
+    .image-error {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      color: #6b2d2d;
+      background: #f5ead0;
+      overflow-wrap: anywhere;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .movement-preview {
+      margin-top: 10px;
+    }
+
+    .movement-preview summary {
+      color: #6f451f;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .movement-img {
+      display: block;
+      width: 100%;
+      height: 220px;
+      object-fit: contain;
+      background: #f5ead0;
+    }
+
+    .about-link-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+    }
+
+    .about-history-message {
+      color: #fff8e1;
+      font-size: 0.85rem;
+      font-weight: normal;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+
+<body class="parchment">
+  <nav class="navbar" aria-label="Main navigation">
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="american-pocket.html">American Pocket Watches</a>
+    <a href="american-wrist.html">American Wrist Watches</a>
+    <a href="swiss-wrist.html">Swiss Wrist Watches</a>
+    <a href="swiss-pocket.html">Swiss Pocket Watches</a>
+    <a href="american-homemade-clocks.html">American Homemade Clocks</a>
+    <a href="brands.html">Brands</a>
+    <a href="collections.html">Collections</a>
+    <a href="search.html">Search</a>
+    <a href="list-your-watch.html">List Your Watch</a>
+    <a href="movement-upload.html">Movement Upload</a>
+    <a href="movement-viewer.html">Movement Viewer</a>
+    <a href="contact.html">Contact</a>
+    <span class="about-link-group">
+      <a href="about.html">About</a>
+      <span class="about-history-message">
+        Click "About" button to read about the importance of pocket watch history
+      </span>
+    </span>
+    <span id="navbar-time" class="navbar-time"></span>
+  </nav>
+
+  <main class="content">
+    <h1>Welcome to VintageWatchSite</h1>
+    <h2>Your home for American and Swiss vintage watches</h2>
+
+    <p class="home-intro">
+      Explore featured watches from the American and Swiss collections.
+      Use Zoom for an individual image or the page magnifier controls for the full page.
+    </p>
+
+    <p id="home-status" class="page-status" role="status">
+      Loading featured watches...
+    </p>
+
+    <section id="watch-grid" class="watch-grid" aria-label="Featured watches"></section>
+
+    <h2>American Homemade Clocks</h2>
+    <p id="clock-status" class="page-status" role="status">Loading homemade clocks...</p>
+    <section id="clock-grid" class="watch-grid" aria-label="American homemade clocks"></section>
+
+    <section class="collection-highlights" aria-labelledby="collection-highlights-title">
+      <h2 id="collection-highlights-title">Cases &amp; Cloisonné</h2>
+      <p>Explore the craftsmanship inside and around vintage timepieces.</p>
+      <div class="collection-highlight-grid">
+        <a class="collection-highlight" href="movement-viewer.html">
+          <svg class="collection-art" viewBox="0 0 320 170" aria-hidden="true">
+            <ellipse class="case-shadow" cx="163" cy="150" rx="92" ry="8"/>
+            <path class="case-chain" d="M156 28V12c0-10 16-10 16 0v16"/>
+            <circle class="case-back" cx="112" cy="91" r="57"/>
+            <circle class="case-back-detail" cx="112" cy="91" r="45"/>
+            <path class="case-back-detail" d="M91 91h42m-21-21v42"/>
+            <circle class="case-open" cx="212" cy="91" r="57"/>
+            <circle class="case-open-detail" cx="212" cy="91" r="44"/>
+            <path class="case-open-detail" d="M212 47v8m0 72v8m-44-44h8m72 0h8m-75-31 6 6m50 50 6 6m0-62-6 6m-50 50-6 6"/>
+            <circle class="case-open-pin" cx="212" cy="91" r="4"/>
           </svg>
-          <span class="art-caption">Made to outlast the moment</span>
-        </div>
-        <span class="hero-index" aria-hidden="true">01 / 03</span>
-      </section>
+          <span>Watch cases</span>
+          <span class="collection-highlight-description">Open a watch movement viewer to explore a case and its movement together.</span>
+        </a>
+        <a class="collection-highlight" href="american-homemade-clocks.html">
+          <svg class="collection-art" viewBox="0 0 320 170" aria-hidden="true">
+            <path class="enamel-bow" d="M154 27V13c0-9 12-9 12 0v14"/>
+            <circle class="enamel-case" cx="160" cy="92" r="67"/>
+            <circle class="enamel-bezel" cx="160" cy="92" r="58"/>
+            <circle class="enamel-face" cx="160" cy="92" r="50"/>
+            <path class="enamel-wire" d="M160 42v100m-50-50h100m-85-35 70 70m0-70-70 70m-14-43 99-27m-99 27 99 27m-70-99 27 99m-27-99-27 99"/>
+            <circle class="enamel-flower" cx="160" cy="92" r="20"/>
+            <circle class="enamel-center" cx="160" cy="92" r="7"/>
+          </svg>
+          <span>Cloisonné enamel</span>
+          <span class="collection-highlight-description">See the 1940s cloisonné mantel clock in the homemade clock collection.</span>
+        </a>
+      </div>
+    </section>
+  </main>
 
-      <section class="collection section-wrap" id="collection" aria-labelledby="collection-title">
-        <div class="section-heading">
-          <p class="eyebrow">Explore by style</p>
-          <h2 id="collection-title">Every era has its own rhythm.</h2>
-          <p>From a daily companion to a keepsake worth passing on, find the kind of timepiece that speaks to you.</p>
-        </div>
-        <div class="category-grid">
-          <article class="category-card">
-            <span class="category-number">01</span>
-            <svg class="category-art" viewBox="0 0 320 170" aria-hidden="true">
-              <ellipse class="case-shadow" cx="163" cy="150" rx="92" ry="8"/>
-              <path class="case-chain" d="M156 28V12c0-10 16-10 16 0v16"/>
-              <circle class="case-back" cx="112" cy="91" r="57"/>
-              <circle class="case-back-detail" cx="112" cy="91" r="45"/>
-              <path class="case-back-detail" d="M91 91h42m-21-21v42"/>
-              <circle class="case-open" cx="212" cy="91" r="57"/>
-              <circle class="case-open-detail" cx="212" cy="91" r="44"/>
-              <path class="case-open-detail" d="M212 47v8m0 72v8m-44-44h8m72 0h8m-75-31 6 6m50 50 6 6m0-62-6 6m-50 50-6 6"/>
-              <circle class="case-open-pin" cx="212" cy="91" r="4"/>
-            </svg>
-            <span class="category-title">Watch cases</span>
-            <span class="category-description">A closer look at the metalwork, contours, and details that protect a timepiece.</span>
-          </article>
-          <article class="category-card">
-            <span class="category-number">02</span>
-            <svg class="category-art" viewBox="0 0 320 170" aria-hidden="true">
-              <path class="enamel-bow" d="M154 27V13c0-9 12-9 12 0v14"/>
-              <circle class="enamel-case" cx="160" cy="92" r="67"/>
-              <circle class="enamel-bezel" cx="160" cy="92" r="58"/>
-              <circle class="enamel-face" cx="160" cy="92" r="50"/>
-              <path class="enamel-wire" d="M160 42v100m-50-50h100m-85-35 70 70m0-70-70 70m-14-43 99-27m-99 27 99 27m-70-99 27 99m-27-99-27 99"/>
-              <circle class="enamel-flower" cx="160" cy="92" r="20"/>
-              <circle class="enamel-center" cx="160" cy="92" r="7"/>
-            </svg>
-            <span class="category-title">Cloisonné enamel</span>
-            <span class="category-description">Colorful enamel artistry, shaped by fine metal wires into intricate dial patterns.</span>
-          </article>
-          <article class="category-card">
-            <span class="category-number">03</span>
-            <span class="category-title">Clocks &amp; curiosities</span>
-            <span class="category-description">Distinctive clocks and unusual timepieces, each with a story to tell.</span>
-          </article>
-        </div>
-      </section>
+  <script src="clock.js"></script>
+  <script src="main.js"></script>
+  <script>
+    const featuredIds = [
+      "hamilton_thor_1960_770_22j",
+      "elgin_father_time_16s_21j_24299142",
+      "elgin_bwr_16s_21j_j376411",
+      "elgin_1960_lord_elgin_760_automatic_30j",
+      "longines_admiral_1973_6651_automatic_daydate_25j",
+      "gruen_semi_thin_758_1928_17j"
+    ];
 
-      <section class="clock-feature" id="american-homemade-clocks" aria-labelledby="clock-title">
-        <div class="clock-feature-layout">
-          <div class="clock-feature-copy">
-            <p class="eyebrow">American Homemade Clocks</p>
-            <h2 id="clock-title">The craft behind the clock.</h2>
-            <p>Open the cabinet and take a closer look at the movement inside this handcrafted wooden clock.</p>
-            <details class="movement-disclosure">
-              <summary class="button movement-toggle">
-                <span class="show-label">View movements</span>
-                <span class="hide-label">Hide movements</span>
-                <span aria-hidden="true">↗</span>
-              </summary>
-              <figure class="movement-figure">
-                <img
-                  src="https://github.com/user-attachments/assets/1230f414-9904-486a-a05b-7eb1cd528fe4"
-                  alt="An open wooden mantel clock with its brass-colored gears and pendulum exposed"
-                  loading="lazy"
-                >
-                <figcaption>The wooden clock cabinet opens to reveal its mechanical movement.</figcaption>
-              </figure>
-            </details>
-          </div>
+    const homemadeClockIds = [
+      "walnut_seth_thomas_triple_chime_pendulum_homemade",
+      "white_oak_triple_chime_tambour_homemade",
+      "regula25_cukoo_24_inch_one_day_musical_1940s_clock",
+      "german_late_1800s_7_foot_weight_driven_grandfather_clock",
+      "victorian_fraganard_1940s_1950s_weight_driven_wall_clock",
+      "Chinese 1940s cloisonne mantle clock"
+    ];
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function getImagePath(watch) {
+      const image = typeof watch.image === "string" ? watch.image.trim() : "";
+      if (image) return image.replace(/\\/g, "/");
+
+      const folder = typeof watch.folder === "string" ? watch.folder.trim() : "";
+      const img = typeof watch.img === "string" ? watch.img.trim() : "";
+      return folder && img ? `images/${folder}/${img}`.replace(/\\/g, "/") : "";
+    }
+
+    function getMovementPath(watch) {
+      return typeof watch.movement_img === "string"
+        ? watch.movement_img.trim().replace(/\\/g, "/")
+        : "";
+    }
+
+    function getCasePath(watch) {
+      return typeof watch.case_image === "string"
+        ? watch.case_image.trim().replace(/\\/g, "/")
+        : "";
+    }
+
+    function showImageError(image, path) {
+      const errorElement = document.createElement("div");
+      errorElement.className = "image-error";
+      errorElement.textContent = path
+        ? `Image not found: ${path}`
+        : "No image path was supplied.";
+      image.replaceWith(errorElement);
+    }
+
+    function createWatchCard(watch) {
+      const card = document.createElement("article");
+      const imagePath = getImagePath(watch);
+      const movementPath = getMovementPath(watch);
+      const casePath = getCasePath(watch);
+      const name = watch.name || "Unnamed watch";
+      const type = watch.type || "Vintage Watch";
+      const description = watch.description || `${name} vintage watch.`;
+
+      card.className = "watch-card";
+      card.innerHTML = `
+        <img class="watch-img loupe-target" src="${escapeHtml(imagePath)}" alt="${escapeHtml(name)}" loading="eager">
+        <h3>${escapeHtml(name)}</h3>
+        <p>${escapeHtml(type)}</p>
+        <div class="card-buttons">
+          <button type="button" class="details-button">View Details</button>
+          <button type="button" class="zoom-button">Zoom</button>
+          <a href="movement-viewer.html?id=${encodeURIComponent(watch.id || "")}">Case &amp; movement</a>
         </div>
-      </section>
+        ${casePath ? `
+          <details class="case-preview">
+            <summary>Preview case</summary>
+            <img class="case-img" src="${escapeHtml(casePath)}" alt="${escapeHtml(name)} case" loading="lazy">
+          </details>
+        ` : ""}
+        ${movementPath ? `
+          <details class="movement-preview">
+            <summary>View movement</summary>
+            <img class="movement-img loupe-target" src="${escapeHtml(movementPath)}" alt="Movement of ${escapeHtml(name)}" loading="lazy">
+          </details>
+        ` : ""}
+      `;
 
-      <section class="story" id="story" aria-labelledby="story-title">
-        <div class="story-mark" aria-hidden="true">V<span>W</span></div>
-        <div>
-          <p class="eyebrow">The beauty of keeping time</p>
-          <h2 id="story-title">Not just a way to tell time.<br><em>A way to hold on to it.</em></h2>
-          <p>Vintage timepieces carry the marks of another era: considered details, honest materials, and a story still unfolding. Find a piece that feels like yours.</p>
-        </div>
-      </section>
+      const image = card.querySelector(".watch-img");
+      image.addEventListener("error", () => showImageError(image, imagePath), { once: true });
+      card.querySelectorAll(".case-img, .movement-img").forEach((preview) => {
+        preview.addEventListener("error", () => {
+          showImageError(preview, preview.getAttribute("src"));
+        }, { once: true });
+      });
 
-      <section class="contact section-wrap" id="contact" aria-labelledby="contact-title">
-        <p class="eyebrow">Your next chapter starts here</p>
-        <h2 id="contact-title">Looking for something<br><em>with a little history?</em></h2>
-        <p>Explore a few different styles and discover the kind of timepiece that feels right for you.</p>
-        <a class="button button-light" href="#collection">Browse the styles <span aria-hidden="true">↗</span></a>
-      </section>
-    </main>
+      card.querySelector(".details-button").addEventListener("click", () => {
+        window.location.href = `details.html?watchId=${encodeURIComponent(watch.id || "")}`;
+      });
 
-    <footer class="site-footer">
-      <a class="wordmark" href="#home">VINTAGE<span>WATCH</span></a>
-      <p>For the love of time, and everything that lasts.</p>
-      <a href="#home">Back to top ↑</a>
-    </footer>
-  </body>
+      card.querySelector(".zoom-button").addEventListener("click", () => {
+        const currentImage = card.querySelector(".watch-img");
+        if (currentImage) currentImage.classList.toggle("zoomed");
+      });
+
+      return card;
+    }
+
+    async function loadFeaturedWatches() {
+      const status = document.getElementById("home-status");
+      const grid = document.getElementById("watch-grid");
+      const clockStatus = document.getElementById("clock-status");
+      const clockGrid = document.getElementById("clock-grid");
+
+      try {
+        const response = await fetch("watches.json", { cache: "no-store" });
+        if (!response.ok) throw new Error(`Unable to load watches.json: ${response.status}`);
+
+        const data = await response.json();
+        if (!data || !Array.isArray(data.watches)) {
+          throw new Error('watches.json must contain a "watches" array.');
+        }
+
+        const watchesById = new Map(data.watches.map((watch) => [watch.id, watch]));
+        const featuredWatches = featuredIds
+          .map((id) => watchesById.get(id))
+          .filter(Boolean);
+
+        if (featuredWatches.length !== featuredIds.length) {
+          console.warn("Some featured watch IDs were not found in watches.json.");
+        }
+
+        grid.replaceChildren(...featuredWatches.map(createWatchCard));
+        status.textContent = `${featuredWatches.length} featured watches loaded.`;
+
+        const homemadeClocks = homemadeClockIds
+          .map((id) => watchesById.get(id))
+          .filter(Boolean);
+        clockGrid.replaceChildren(...homemadeClocks.map(createWatchCard));
+        clockStatus.textContent = `${homemadeClocks.length} homemade clocks loaded.`;
+      } catch (error) {
+        console.error("Failed to load featured watches:", error);
+        status.textContent = "Unable to load watches. Check watches.json and Live Server.";
+        grid.replaceChildren();
+        clockStatus.textContent = "Unable to load homemade clocks.";
+        clockGrid.replaceChildren();
+      }
+    }
+
+    loadFeaturedWatches();
+  </script>
+</body>
 </html>
