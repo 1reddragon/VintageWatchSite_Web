@@ -450,6 +450,7 @@
       "image": "images/american-homemade-clocks/walnut_seth_thomas_triple_chime_pendulum_homemade.jpg",
       "img": "images/american-homemade-clocks/walnut_seth_thomas_triple_chime_pendulum_homemade.jpg",
       "description": "Walnut Seth Thomas homemade triple-chime pendulum clock.",
+      "case_image": "images/american-cases-homemade-clocks/walnut_seth_thomas_triple_chime_pendulum_homemade_case.jpg",
       "movement_img": "images/american-movements-homemade-clocks/1051_031A_hermle_triple_chime_pendulum.jpg"
     },
         {
@@ -553,7 +554,7 @@
     },
 
     {
-      "id": "Chinese 1940s cloisonne mantle clock",
+      "id": "chinese_1940s_cloisonne_mantle_clock",
       "name": "Cloisonne Mantle Clock",
       "brand": "Chinese",
       "type": "Mantle Clock",
