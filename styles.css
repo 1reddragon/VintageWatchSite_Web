@@ -287,6 +287,78 @@ h2 em {
   line-height: 1.6;
 }
 
+.clock-feature {
+  padding: 90px max(10vw, 32px);
+  background: var(--paper-dark);
+}
+
+.clock-feature-layout {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.clock-feature-copy {
+  max-width: 650px;
+}
+
+.clock-feature h2 {
+  margin: 0;
+  font-size: clamp(36px, 4.5vw, 56px);
+  letter-spacing: -.04em;
+  line-height: 1.12;
+}
+
+.clock-feature-copy > p:not(.eyebrow) {
+  max-width: 480px;
+  margin: 18px 0 26px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.movement-toggle {
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
+  list-style: none;
+}
+
+.movement-toggle::-webkit-details-marker {
+  display: none;
+}
+
+.movement-toggle:focus-visible {
+  outline: 2px solid var(--rust);
+  outline-offset: 5px;
+}
+
+.hide-label,
+.movement-disclosure[open] .show-label {
+  display: none;
+}
+
+.movement-disclosure[open] .hide-label {
+  display: inline;
+}
+
+.movement-figure {
+  margin: 28px 0 0;
+}
+
+.movement-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.movement-figure figcaption {
+  margin-top: 12px;
+  color: var(--muted);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 13px;
+  font-style: italic;
+}
+
 .story {
   display: grid;
   grid-template-columns: 180px 1fr;
