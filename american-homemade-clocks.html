@@ -80,7 +80,7 @@
     <section class="clock-grid" aria-label="American homemade clocks">
       <article
         class="clock-card"
-        data-movement="images/american-movements-homemade-clocks/1051_031A_hermle_triple_chime_pendulum.jpg"
+        data-id="walnut_seth_thomas_triple_chime_pendulum_homemade"
       >
         <img
           class="clock-img loupe-target"
@@ -104,7 +104,7 @@
 
       <article
         class="clock-card"
-        data-movement="images/american-movements-homemade-clocks/351_020_hermle_triple_chime.jpg"
+        data-id="white_oak_triple_chime_tambour_homemade"
       >
         <img
           class="clock-img loupe-target"
@@ -128,7 +128,7 @@
 
       <article
         class="clock-card"
-        data-movement="images/american-movements-homemade-clocks/regula25_cukoo_24_inch_one_day_musical_1940s_clock.jpg"
+        data-id="regula25_cukoo_24_inch_one_day_musical_1940s_clock"
       >
         <img
           class="clock-img loupe-target"
@@ -152,7 +152,7 @@
 
       <article
         class="clock-card"
-        data-movement="images/american-movements-homemade-clocks/german_late_1800s_7_foot_weight_driven_grandfather_clock_movement.jpg"
+        data-id="german_late_1800s_7_foot_weight_driven_grandfather_clock"
       >
         <img
           class="clock-img loupe-target"
@@ -176,7 +176,7 @@
 
       <article
         class="clock-card"
-        data-movement="images/american-movements-homemade-clocks/schmeckenbecher_H65_weight_driven_movement.jpg"
+        data-id="victorian_fraganard_1940s_1950s_weight_driven_wall_clock"
       >
         <img
           class="clock-img loupe-target"
@@ -185,6 +185,30 @@
         >
         <h3>Victorian Fraganard 1940s-1950s Weight-Driven Wall Clock</h3>
         <p>Victorian Fraganard Wall Clock</p>
+        <div class="card-buttons">
+          <button type="button" class="details-button">
+            View Details
+          </button>
+          <button type="button" class="zoom-button">
+            Zoom
+          </button>
+          <button type="button" class="movement-button">
+            Movement
+          </button>
+        </div>
+      </article>
+
+      <article
+        class="clock-card"
+        data-id="chinese_1940s_cloisonne_mantle_clock"
+      >
+        <img
+          class="clock-img loupe-target"
+          src="images/american-homemade-clocks/chinese_1940s_cloisonne_clock.jpg"
+          alt="Chinese 1940s Cloisonne battery-operated mantle clock"
+        >
+        <h3>Cloisonne Mantle Clock</h3>
+        <p>Chinese Mantle Clock</p>
         <div class="card-buttons">
           <button type="button" class="details-button">
             View Details
@@ -221,9 +245,10 @@
       });
 
       card.querySelector(".movement-button").addEventListener("click", () => {
-        const movementPath = card.dataset.movement;
-        const imagePath = movementPath || image.getAttribute("src");
-        const movementUrl = `movement-viewer.html?image=${encodeURIComponent(imagePath)}&name=${encodeURIComponent(name)}`;
+        const watchId = card.dataset.id;
+        const movementUrl = watchId
+          ? `movement-viewer.html?id=${encodeURIComponent(watchId)}`
+          : `movement-viewer.html?image=${encodeURIComponent(image.getAttribute("src"))}&name=${encodeURIComponent(name)}`;
         window.location.href = movementUrl;
       });
     });
