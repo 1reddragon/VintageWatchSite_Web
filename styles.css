@@ -256,7 +256,7 @@ h2 em {
 .category-card {
   display: flex;
   flex-direction: column;
-  min-height: 210px;
+  min-height: 320px;
   padding: 24px;
   transition: background .2s ease;
 }
@@ -269,6 +269,83 @@ h2 em {
   color: var(--rust);
   font-size: 10px;
   letter-spacing: .12em;
+}
+
+.category-art {
+  display: block;
+  width: 100%;
+  height: 150px;
+  margin: 12px 0 6px;
+}
+
+.case-shadow {
+  fill: #28251f;
+  opacity: .1;
+}
+
+.case-chain {
+  fill: none;
+  stroke: #8c693b;
+  stroke-width: 5;
+}
+
+.case-back,
+.case-open {
+  fill: #c8a66e;
+  stroke: #8c693b;
+  stroke-width: 5;
+}
+
+.case-back-detail,
+.case-open-detail {
+  fill: none;
+  stroke: #ead9b4;
+  stroke-width: 2;
+}
+
+.case-open-detail {
+  stroke: #8c693b;
+}
+
+.case-open-pin {
+  fill: #8c693b;
+}
+
+.enamel-bow {
+  fill: none;
+  stroke: #9b4d35;
+  stroke-linecap: round;
+  stroke-width: 5;
+}
+
+.enamel-case {
+  fill: #c8a66e;
+  stroke: #8c693b;
+  stroke-width: 4;
+}
+
+.enamel-bezel {
+  fill: #e9d6a9;
+}
+
+.enamel-face {
+  fill: #176c67;
+}
+
+.enamel-wire {
+  fill: none;
+  stroke: #e6bb63;
+  stroke-width: 2;
+}
+
+.enamel-flower {
+  fill: #a8404a;
+  stroke: #e6bb63;
+  stroke-width: 2;
+}
+
+.enamel-center {
+  fill: #f1d589;
 }
 
 .category-title {
