@@ -310,6 +310,143 @@ textarea:focus-visible {
   white-space: nowrap;
 }
 
+.case-preview,
+.movement-preview {
+  margin-top: 10px;
+  text-align: left;
+}
+
+.case-preview summary,
+.movement-preview summary {
+  color: #6f451f;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.case-img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background: #f5ead0;
+}
+
+.collection-highlights {
+  margin-top: 38px;
+  padding: 24px;
+  background: #fff8e1;
+  border: 1px solid #c2a35e;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.collection-highlights > p {
+  margin-top: -8px;
+}
+
+.collection-highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.collection-highlight {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+  padding: 16px;
+  color: #2f1b0c;
+  background: #f5ead0;
+  border: 1px solid #c2a35e;
+  border-radius: 4px;
+  font-size: 1.15rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.collection-highlight:hover {
+  background: #f2e0b6;
+}
+
+.collection-highlight:focus-visible {
+  outline: 3px solid #d49a27;
+  outline-offset: 3px;
+}
+
+.collection-highlight-description {
+  font-size: .9rem;
+  font-weight: normal;
+}
+
+.collection-art {
+  display: block;
+  width: min(100%, 320px);
+  height: 150px;
+}
+
+.case-shadow {
+  fill: #28251f;
+  opacity: .1;
+}
+
+.case-chain,
+.enamel-bow {
+  fill: none;
+  stroke: #8c693b;
+  stroke-linecap: round;
+  stroke-width: 5;
+}
+
+.case-back,
+.case-open,
+.enamel-case {
+  fill: #c8a66e;
+  stroke: #8c693b;
+  stroke-width: 4;
+}
+
+.case-back-detail,
+.case-open-detail {
+  fill: none;
+  stroke: #ead9b4;
+  stroke-width: 2;
+}
+
+.case-open-detail {
+  stroke: #8c693b;
+}
+
+.case-open-pin,
+.enamel-center {
+  fill: #8c693b;
+}
+
+.enamel-bow {
+  stroke: #9b4d35;
+}
+
+.enamel-bezel {
+  fill: #e9d6a9;
+}
+
+.enamel-face {
+  fill: #176c67;
+}
+
+.enamel-wire {
+  fill: none;
+  stroke: #e6bb63;
+  stroke-width: 2;
+}
+
+.enamel-flower {
+  fill: #a8404a;
+  stroke: #e6bb63;
+  stroke-width: 2;
+}
+
 /* Mobile layout */
 @media (max-width: 700px) {
   .navbar {
@@ -348,5 +485,9 @@ textarea:focus-visible {
 
   .page-zoom-help {
     font-size: 0.65rem;
+  }
+
+  .collection-highlight-grid {
+    grid-template-columns: 1fr;
   }
 }

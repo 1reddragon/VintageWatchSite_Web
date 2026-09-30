@@ -80,6 +80,7 @@
     <section class="clock-grid" aria-label="American homemade clocks">
       <article
         class="clock-card"
+        data-watch-id="walnut_seth_thomas_triple_chime_pendulum_homemade"
         data-movement="images/american-movements-homemade-clocks/1051_031A_hermle_triple_chime_pendulum.jpg"
       >
         <img
@@ -104,6 +105,7 @@
 
       <article
         class="clock-card"
+        data-watch-id="white_oak_triple_chime_tambour_homemade"
         data-movement="images/american-movements-homemade-clocks/351_020_hermle_triple_chime.jpg"
       >
         <img
@@ -128,6 +130,7 @@
 
       <article
         class="clock-card"
+        data-watch-id="regula25_cukoo_24_inch_one_day_musical_1940s_clock"
         data-movement="images/american-movements-homemade-clocks/regula25_cukoo_24_inch_one_day_musical_1940s_clock.jpg"
       >
         <img
@@ -152,6 +155,7 @@
 
       <article
         class="clock-card"
+        data-watch-id="german_late_1800s_7_foot_weight_driven_grandfather_clock"
         data-movement="images/american-movements-homemade-clocks/german_late_1800s_7_foot_weight_driven_grandfather_clock_movement.jpg"
       >
         <img
@@ -176,6 +180,7 @@
 
       <article
         class="clock-card"
+        data-watch-id="victorian_fraganard_1940s_1950s_weight_driven_wall_clock"
         data-movement="images/american-movements-homemade-clocks/schmeckenbecher_H65_weight_driven_movement.jpg"
       >
         <img
@@ -195,6 +200,25 @@
           <button type="button" class="movement-button">
             Movement
           </button>
+        </div>
+      </article>
+
+      <article
+        class="clock-card"
+        data-watch-id="Chinese 1940s cloisonne mantle clock"
+        data-movement="images/american-movements-homemade-clocks/chinese_1940s_cloisonne_mantle_clock_movement.jpg"
+      >
+        <img
+          class="clock-img loupe-target"
+          src="images/american-homemade-clocks/chinese_1940s_cloisonne_clock.jpg"
+          alt="1940s Chinese cloisonné mantel clock with colorful enamel decoration"
+        >
+        <h3>1940s Chinese Cloisonné Mantel Clock</h3>
+        <p>Cloisonné Mantel Clock</p>
+        <div class="card-buttons">
+          <button type="button" class="details-button">View Details</button>
+          <button type="button" class="zoom-button">Zoom</button>
+          <button type="button" class="movement-button">View Case &amp; Movement</button>
         </div>
       </article>
     </section>
@@ -221,6 +245,12 @@
       });
 
       card.querySelector(".movement-button").addEventListener("click", () => {
+        const watchId = card.dataset.watchId;
+        if (watchId) {
+          window.location.href = `movement-viewer.html?id=${encodeURIComponent(watchId)}`;
+          return;
+        }
+
         const movementPath = card.dataset.movement;
         const imagePath = movementPath || image.getAttribute("src");
         const movementUrl = `movement-viewer.html?image=${encodeURIComponent(imagePath)}&name=${encodeURIComponent(name)}`;
@@ -230,4 +260,3 @@
   </script>
 </body>
 </html>
-

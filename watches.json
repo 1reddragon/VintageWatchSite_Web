@@ -265,7 +265,7 @@
       "case_image": "images/american_wrist_watch_cases/benrus_1953_BA2_17j_case.jpg",
       "movement_img": "images/american-movements-watches/benrus_1953_BA2_17j.jpg"
     },
-    
+
     {
       "id": "bulova_accuquartz",
       "name": "Bulova Accuquartz",
@@ -416,7 +416,7 @@
       "case_image": "images/swiss-watch-cases/longine_admiral_1973_6651_automatic_daydate_25j_case.jpg",
       "movement_img": "images/swiss-movements-watches/longines_admiral_1973_6651_automatic_daydate_25j.jpg"
     },
-    
+
     {
       "id": "seiko_5_21j",
       "name": "Seiko 5 21J",
@@ -450,6 +450,7 @@
       "image": "images/american-homemade-clocks/walnut_seth_thomas_triple_chime_pendulum_homemade.jpg",
       "img": "images/american-homemade-clocks/walnut_seth_thomas_triple_chime_pendulum_homemade.jpg",
       "description": "Walnut Seth Thomas homemade triple-chime pendulum clock.",
+      "case_image": "images/american-cases-homemade-clocks/walnut_seth_thomas_triple_chime_pendulum_homemade_case.jpg",
       "movement_img": "images/american-movements-homemade-clocks/1051_031A_hermle_triple_chime_pendulum.jpg"
     },
         {
@@ -461,7 +462,7 @@
       "image": "images/american-homemade-clocks/white_oak_triple_chime_tambour_homemade.jpg",
       "img": "images/american-homemade-clocks/white_oak_triple_chime_tambour_homemade.jpg",
       "description": "White oak homemade triple-chime tambour clock.",
-      "case_image": "images/american-cases-homemade-clocks/white_oak_triple_chime_tambour_homemade.jpg",
+      "case_image": "images/american-cases-homemade-clocks/white_oak_triple_chime_tambour_homemade_clock_case.jpg",
       "movement_img": "images/american-movements-homemade-clocks/351_020_hermle_triple_chime.jpg"
     },
     {
@@ -485,7 +486,7 @@
       "image": "images/american-homemade-clocks/german_late_1800s_7_foot_weight_driven_grandfather_clock.jpg",
       "img": "images/american-homemade-clocks/german_late_1800s_7_foot_weight_driven_grandfather_clock.jpg",
       "description": "German late-1800s 7-foot weight-driven grandfather clock.",
-      "movement_img": "/images/american-movements-homemade-clocks/german_late_1800s_7_foot_weight_driven_grandfather_clock.jpg"
+      "movement_img": "images/american-movements-homemade-clocks/german_late_1800s_7_foot_weight_driven_grandfather_clock_movement.jpg"
     },
 
     {
@@ -554,17 +555,17 @@
 
     {
       "id": "Chinese 1940s cloisonne mantle clock",
-      "name": "Cloisonne Mantle Clock",
+      "name": "Cloisonné Mantel Clock",
       "brand": "Chinese",
       "type": "Mantle Clock",
       "folder": "american-homemade-clocks",
-      "image": "images/american-homemade-clocks/chinese_1940s_cloisonne_mantle_clock.jpg",
-      "img": "images/american-homemade-clocks/chinese_1940s_cloisonne_mantle_clock.jpg",
+      "image": "images/american-homemade-clocks/chinese_1940s_cloisonne_clock.jpg",
+      "img": "images/american-homemade-clocks/chinese_1940s_cloisonne_clock.jpg",
       "description": "Chinese 1940s Cloisonne Battery Operated Mantle clock.",
-      "case_image": "images/american-cases-homemade-clocks/chinese_1940s_cloisonne_mantle_clock_movement.jpg",
+      "case_image": "images/american-cases-homemade-clocks/chinese_1940s_cloisonne_clock_case.jpg",
       "movement_img": "images/american-movements-homemade-clocks/chinese_1940s_cloisonne_mantle_clock_movement.jpg"
     }
-    
-    
+
+
   ]
 }
